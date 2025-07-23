@@ -16,6 +16,13 @@ import UIUXServicesPage from './pages/UIUXServicesPage';
 import SaaSDevelopmentPage from './pages/SaaSDevelopmentPage';
 import WebAppDevelopmentPage from './pages/WebAppDevelopmentPage';
 import APIIntegrationPage from './pages/ApiIntegrationPage';
+import SoftwareProductPage from './pages/SoftwareProductPage';
+import StaffAugmentationPage from './pages/StaffAugmentationPage.js';
+import DataAnalyticsPage from './pages/DataAnalyticsPage';
+import CloudConsultingPage from './pages/CloudConsultingPage';
+import DevopsServicesPage from './pages/DevopsServicesPage';
+import EnterPrise from './pages/EnterPrise';
+import SoftwareOutsourcing from './pages/SoftwareOutsourcing';
 import './App.css';
 
 function App() {
@@ -38,6 +45,13 @@ function App() {
         <Route path="/services/saas-development" element={<SaaSDevelopmentPage />} />
         <Route path="/services/web-app-development" element={<WebAppDevelopmentPage />} />
         <Route path="/services/api-integration" element={<APIIntegrationPage />} />
+        <Route path="/services/software-product" element={<SoftwareProductPage />} />
+        <Route path="/services/staff-augmentation" element={<StaffAugmentationPage />} />
+        <Route path="/services/data-analytics" element={<DataAnalyticsPage />} />
+        <Route path= "/services/cloud-consulting" element={<CloudConsultingPage />}/>
+        <Route path="/services/devops-services" element={<DevopsServicesPage />} />
+        <Route path="/services/enterprise-software" element={<EnterPrise />} />
+        <Route path="/services/software-outsourcing" element={<SoftwareOutsourcing />} />
       </Routes>
     </Router>
   );

@@ -121,7 +121,9 @@ const WorkMasteryTabs = () => {
                 onClick={() => setActiveTab(work.id)}
                 className="w-1/5 py-4 px-1 text-center transition-all duration-300 focus:outline-none relative"
               >
-                <img src={work.logo} alt={`${work.id} logo`} className="h-8 mx-auto grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300" />
+                <div className="bg-white p-2 rounded-md transition-all duration-300">
+                    <img src={work.logo} alt={`${work.id} logo`} className="h-8 sm:h-10 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
+                </div>
                 {activeTab === work.id && (
                   <motion.div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500" layoutId="underline" />
                 )}

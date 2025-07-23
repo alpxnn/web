@@ -120,7 +120,9 @@ const WorkMastery = () => {
               onClick={() => setActiveTab(work.id)}
               className={`relative w-full py-4 px-2 text-center transition-colors duration-300 ${activeTab === work.id ? 'text-white' : 'text-gray-400 hover:text-white'}`}
             >
-              <img src={work.companyLogo} alt={`${work.id} logo`} className="h-10 sm:h-12 mx-auto filter grayscale hover:grayscale-0 transition-all duration-300" />
+              <div className="bg-white p-2 rounded-md transition-all duration-300">
+                  <img src={work.companyLogo} alt={`${work.id} logo`} className="h-8 sm:h-10 object-contain filter grayscale hover:grayscale-0 transition-all duration-300" />
+                </div>
               {activeTab === work.id && (
                 <motion.div className="absolute bottom-0 left-0 right-0 h-1 bg-blue-500" layoutId="underline" />
               )}
